@@ -1,0 +1,42 @@
+# TrendRadar Schlagwort-Konfiguration (Deutsch)
+# Reihenfolge für das 2x2-Raster:
+#   Zeile 1: Politics - International (links) | Politics - DACH (rechts)
+#   Zeile 2: Economy  - International (links) | Economy  - DACH (rechts)
+
+[GLOBAL_FILTER]
+# Unerwünschte Themen/Clickbait hier ausschließen
+
+
+[WORD_GROUPS]
+
+[Politics - International]
+@5
+/\beu\b|european union|europäische union|brüssel|brussels|european commission|eu-kommission|eu-parlament/i
+/\bnato\b|\bun\b|united nations|uno|g7|g20|geopolitik|sanctions|sanktionen|foreign policy|außenpolitik/i
+/election|wahl|parlament|parliament|treaty|gipfel|summit|koalition|government|prime minister|president/i
+/ukraine|russia|russland|china|usa|washington|white house|middle east|nahost|iran|israel|taiwan/i
+
+[Politics - DACH (AT & DE)]
+@5
+/nationalrat|bundesrat|bundesregierung|bundeskanzler|bundespräsident|bundestag|ampel|groko/i
+/koalition|neuwahl|landtag|ministerrat|gesetzesentwurf|verfassungsgerichtshof|bundesverfassungsgericht/i
+/\bövp\b|\bspö\b|\bfpö\b|\bneos\b|\bcdu\b|\bcsu\b|\bspd\b|\bafd\b|\bfdp\b|grüne|linke|bsw/i
+/innenpolitik|asyl|migration|pension|rente|gesundheitsreform|bildungsreform|verteidigungsetat/i
+
+[Economy - International]
+@5
+/inflation|kerninflation|core inflation|deflation|stagflation|verbraucherpreis|consumer price|\bcpi\b|\bhicp\b|\bhvpi\b/i
+/leitzins|interest rate|rate cut|rate hike|zinssenkung|zinserhöhung|zinsentscheid|central bank|zentralbank|\bfed\b|\becb\b|\bezb\b|bank of england|powell|lagarde/i
+/\bgdp\b|\bbip\b|wirtschaftswachstum|economic growth|recession|rezession|konjunktur|einkaufsmanagerindex|\bpmi\b/i
+/arbeitslosenquote|unemployment|arbeitsmarkt|payroll|nonfarm|lohnentwicklung/i
+/staatsverschuldung|national debt|budgetdefizit|fiscal|anleiherendite|bond yield|treasury|staatsanleihe/i
+/tariff|zölle|trade war|handelskrieg|supply chain|lieferkette|währungskurs|exchange rate|eur\/usd|ölpreis|oil price|gaspreis/i
+/stock market|wall street|s&p 500|nasdaq|\bdax\b|\bimf\b|\biwf\b|world bank|weltbank|\boecd\b/i
+
+[Economy - DACH (AT & DE)]
+@5
+/österreich|austria|wien|vienna|deutschland|germany|berlin|frankfurt|münchen/i
+/\batx\b|wiener börse|\bdax\b|mdax|\boenb\b|nationalbank|bundesbank|\bwifo\b|\bihs\b|\bifo\b|zew-index|wirtschaftskammer|\bwko\b|\bbdi\b/i
+/teuerung|mieten|lohnverhandlung|kollektivvertrag|tarifvertrag|mindestlohn|kaufkraft|insolvenz/i
+/schuldenbremse|bundeshaushalt|budgetdefizit|steuerreform|industrieförderung|fachkräftemangel/i
+/omv|voestalpine|erste group|raiffeisen|verbund|siemens|volkswagen|\bvw\b|basf|allianz|sap|deutsche bank/i
